@@ -4,6 +4,7 @@ A simple site that auto compute suggested retail price and installment plan base
 website: http://flg.rf.gd
 
 <a href="http://flg.rf.gd" target="_blank"> http://flg.rf.gd </a>
+<a href="[test.html](http://flg.rf.gd)" onclick="return ! window.open(this.href);">[Open in a new window](http://flg.rf.gd)</a>
 
 to play around..
 
