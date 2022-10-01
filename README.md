@@ -3,20 +3,20 @@ A simple site that auto compute suggested retail price and installment plan base
 
 to play around..
 
-codes:
+codes: <br/>
 HIWAYSTORE -> these set of characters has a number value
-
-H -> 1
-I -> 2
-W -> 3
-A -> 4
-Y -> 5
-S -> 6
-T -> 7
-O -> 8
-R -> 9
-E -> 0
-
+<br/>
+H -> 1 <br/>
+I -> 2 <br/>
+W -> 3 <br/>
+A -> 4 <br/>
+Y -> 5 <br/>
+S -> 6 <br/>
+T -> 7 <br/>
+O -> 8 <br/>
+R -> 9 <br/>
+E -> 0 <br/>
+<br/>
 Example input: enter code HEEEE, this has a equivalent number value of 10000
 
 
