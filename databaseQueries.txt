@@ -1,0 +1,17 @@
+create table tblcode(
+	ID int AUTO_INCREMENT,
+    flag int NOT null default 1,
+    dp int not null,
+    interest int not null,
+    markup int not null,
+    codes varchar(25) not null DEFAULT 'EHIWAYSTOR' COMMENT 'letter codes that have eqivalent number values example EHIWAYSTOR equivalent to 0123456789',
+    PRIMARY KEY (ID)    
+)
+
+create table tblpricinglogin(
+    ID int AUTO_INCREMENT,
+    username varchar(50) not null,
+    password varchar(50) not null,
+    flag int not null default 0,
+    primary key (ID)
+)

@@ -1,0 +1,543 @@
+.container {
+  width: 100%;
+  height: auto;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none; /* supported by Chrome and Opera */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html {
+  font-size: 14px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: gray;
+}
+
+.content-wrapper {
+  width: 70%;
+  height: calc(100% - 70px);
+  height: minmax(500px, auto);
+  background-color: whitesmoke;
+  margin: auto;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.content-wrapper h2 {
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 5px;
+  background-color: rgb(38, 38, 134);
+  color: whitesmoke;
+}
+
+.fields-wrapper {
+  width: auto;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.fields-wrapper .inputwrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: initial;
+  width: 70%;
+  margin: auto;
+  border-bottom: 1px solid rgba(194, 192, 192, 0.3);
+}
+.fields-wrapper .inputwrap .lbltitle {
+  width: 200px;
+  padding: 15px 10px;
+}
+.fields-wrapper .inputwrap input {
+  padding: 0px 15px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  width: 150px;
+  text-transform: uppercase;
+}
+.fields-wrapper .inputwrap input::-moz-placeholder {
+  font-size: 0.8rem;
+  text-transform: capitalize;
+}
+.fields-wrapper .inputwrap input:-ms-input-placeholder {
+  font-size: 0.8rem;
+  text-transform: capitalize;
+}
+.fields-wrapper .inputwrap input::placeholder {
+  font-size: 0.8rem;
+  text-transform: capitalize;
+}
+.fields-wrapper .inputwrap div {
+  padding: 15px 25px;
+  margin: 15px 3vw;
+  border-radius: 13px;
+  background-color: green;
+  color: aliceblue;
+  display: block;
+  cursor: pointer;
+}
+.fields-wrapper .inputwrap div.btnEditDp:hover {
+  background-color: rgba(0, 128, 0, 0.8);
+}
+.fields-wrapper .inputwrap .settingsdiv {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  background-color: transparent;
+}
+.fields-wrapper .inputwrap .settings {
+  text-align: right;
+  text-decoration: none;
+  color: black;
+  margin-top: 15px;
+  font-size: 1.2rem;
+}
+.fields-wrapper .inputwrap .settings:hover {
+  color: blue;
+  transform: all ease 0.3s;
+}
+.fields-wrapper .result-container {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.fields-wrapper .result-container div {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: initial;
+  width: 100%;
+  margin: auto;
+  border-bottom: 1px solid rgba(194, 192, 192, 0.3);
+}
+.fields-wrapper .result-container .lbltitle {
+  width: 200px;
+  padding: 15px 10px;
+}
+.fields-wrapper .result-container .lblvalue {
+  width: 150px;
+  padding: 15px 10px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-align: right;
+}
+
+.modal div {
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.modal div p {
+  display: block;
+}
+.modal div input {
+  padding: 6px;
+  width: 150px;
+  margin-top: 10px;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.modal div input::-moz-placeholder {
+  font-size: 0.8rem;
+  text-transform: capitalize;
+}
+.modal div input:-ms-input-placeholder {
+  font-size: 0.8rem;
+  text-transform: capitalize;
+}
+.modal div input::placeholder {
+  font-size: 0.8rem;
+  text-transform: capitalize;
+}
+.modal div .btnUpdateDp {
+  margin-top: 15px;
+  padding: 10px 20px;
+  width: 150px;
+  cursor: pointer;
+  background-color: rgb(57, 57, 207);
+  color: whitesmoke;
+  border-radius: 10px;
+  border: none;
+  font-size: 1rem;
+}
+.modal div .btnUpdateDp:hover {
+  background-color: rgba(57, 57, 207, 0.9);
+}
+
+footer {
+  width: 100%;
+  height: 70px;
+  text-align: center;
+  background-color: transparent;
+  padding-top: 10px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.main-container-login {
+  width: 100vw;
+  height: 100vh;
+  background-color: gray;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  font-size: 1.3rem;
+}
+
+.login-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  width: 450px;
+  min-height: 250px;
+  padding: 10px;
+  margin: auto;
+  background-color: white;
+  border-radius: 10px;
+}
+.login-wrapper div.divTexts {
+  display: flex;
+  flex-direction: row;
+  width: 85%;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+.login-wrapper div.divTexts span {
+  width: 40px;
+  height: 100%;
+}
+.login-wrapper div.divTexts svg {
+  width: 95%;
+  height: auto;
+  padding: 5px;
+}
+.login-wrapper div.divTexts input {
+  padding: 10px;
+  width: calc(100% - 40px);
+  border: none;
+  outline: none;
+  height: 100%;
+}
+.login-wrapper div.divTexts input[type=text]:focus, .login-wrapper div.divTexts input[type=password]:focus {
+  border-color: rgba(204, 204, 204, 0.8);
+  margin: 0;
+  height: 100%;
+}
+.login-wrapper .NoBorderTop {
+  border-top: 0 !important;
+}
+.login-wrapper div.divButtons {
+  display: flex;
+  flex-direction: row;
+  width: 85%;
+  margin: 15px auto;
+  border: none;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2vw;
+}
+.login-wrapper div.divButtons input {
+  width: 35%;
+  height: auto;
+  padding: 10px 15px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+}
+.login-wrapper div.divButtons .btnhome {
+  background-color: gray;
+}
+.login-wrapper div.divButtons .btnlogin {
+  background-color: blue;
+  color: white;
+}
+.login-wrapper div.divButtons .btnhome:hover {
+  background-color: rgba(128, 128, 128, 0.8);
+  transition: 0.5s;
+}
+.login-wrapper div.divButtons .btnlogin:hover {
+  background-color: rgba(0, 0, 255, 0.8);
+  color: white;
+  transition: 0.5s;
+}
+.login-wrapper .error_content {
+  width: 85%;
+  height: auto;
+  margin: 0 auto;
+  font-size: 1rem;
+  margin-bottom: 3px;
+}
+.login-wrapper .error_content .error_notif {
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  background-color: rgb(228, 105, 105);
+  color: black;
+}
+
+.admin_content {
+  width: 70%;
+  height: 100%;
+  padding: 10px;
+  margin: auto;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+.admin_content h1 {
+  font-size: 1.3rem;
+  width: 100%;
+  background-color: #eee;
+  padding: 15px;
+}
+.admin_content .header-menu {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid rgba(204, 204, 204, 0.9);
+}
+.admin_content .header-menu div {
+  width: 50%;
+}
+.admin_content .header-menu div a {
+  padding: 10px 15px;
+  text-decoration: none;
+  display: inline-block;
+  background-color: rgb(29, 104, 79);
+  width: 100%;
+  height: 100%;
+  color: whitesmoke;
+  font-weight: 700;
+}
+.admin_content .header-menu div a:hover {
+  background-color: rgba(29, 104, 79, 0.5);
+  color: black;
+}
+.admin_content .header-menu .btnpricingSettings.active {
+  background-color: rgba(29, 104, 79, 0.1);
+  border-bottom: none;
+  color: black;
+}
+.admin_content .header-menu .btnloginSettings.active {
+  background-color: rgba(29, 104, 79, 0.1);
+  color: black;
+}
+.admin_content .settings-container {
+  width: 100%;
+  background-color: rgba(29, 104, 79, 0.1);
+  height: 100%;
+}
+.admin_content .settings-container .pricing-container {
+  width: 100%;
+}
+.admin_content .settings-container .pricing-container .pricing-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 20px;
+}
+.admin_content .settings-container .pricing-container .pricing-wrapper div {
+  padding: 3px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 5px;
+}
+.admin_content .settings-container .pricing-container .pricing-wrapper div label {
+  width: 160px;
+  padding: 5px;
+}
+.admin_content .settings-container .pricing-container .pricing-wrapper div input {
+  width: 140px;
+  padding: 5px 10px;
+}
+.admin_content .settings-container .pricing-container .pricing-wrapper div input.txtcode {
+  text-transform: uppercase;
+}
+.admin_content .settings-container .pricing-container .pricingbtn-wrapper {
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+.admin_content .settings-container .pricing-container .pricingbtn-wrapper input {
+  width: 150px;
+  padding: 10px 20px;
+  background-color: rgb(11, 39, 25);
+  color: white;
+  cursor: pointer;
+  margin-left: 2rem;
+  outline: none;
+  border: none;
+  border-radius: 7px;
+}
+.admin_content .settings-container .pricing-container .pricingbtn-wrapper input:hover {
+  background-color: rgba(11, 39, 25, 0.9);
+}
+.admin_content .settings-container .logout-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding-right: 15px;
+}
+.admin_content .settings-container .logout-wrapper a {
+  color: red;
+  text-decoration: none;
+  padding: 5px 15px;
+  font-size: 1.1rem;
+  display: block;
+  cursor: pointer;
+}
+.admin_content .settings-container .logout-wrapper a:hover {
+  background-color: rgba(204, 204, 204, 0.473);
+  padding: 5px 15px;
+  transition: 0.3s;
+  border-radius: 6px;
+}
+.admin_content .loginSettings-container {
+  width: 100%;
+  height: auto;
+  display: none;
+}
+.admin_content .loginSettings-container .loginSettings-wrapper {
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+.admin_content .loginSettings-container .loginSettings-wrapper div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+.admin_content .loginSettings-container .loginSettings-wrapper div label {
+  width: 150px;
+  padding: 5px;
+}
+.admin_content .loginSettings-container .loginSettings-wrapper div input {
+  width: 200px;
+  padding: 5px 10px;
+}
+.admin_content .loginSettings-container .loginSettings-wrapper div .errorLogin-notif {
+  width: 100%;
+  padding: 3px;
+  text-align: left;
+  margin-left: 15px;
+  color: red;
+}
+.admin_content .loginSettings-container .loginSettingsbtn-wrapper {
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+.admin_content .loginSettings-container .loginSettingsbtn-wrapper input {
+  width: 150px;
+  padding: 10px 20px;
+  background-color: rgb(19, 34, 73);
+  color: white;
+  cursor: pointer;
+  margin-left: 2rem;
+  outline: none;
+  border: none;
+  border-radius: 7px;
+}
+.admin_content .loginSettings-container .loginSettingsbtn-wrapper input:hover {
+  background-color: rgba(19, 34, 73, 0.9);
+}
+.admin_content .pricing-container.active {
+  display: block;
+}
+.admin_content .pricing-container.inactive {
+  display: none;
+}
+.admin_content .loginSettings-container.active {
+  display: block;
+}
+.admin_content .loginSettings-container.inactive {
+  display: none;
+}
+
+#modalform #notif_error {
+  color: red !important;
+}
+
+@media (max-width: 550px) {
+  .content-wrapper {
+    width: 95%;
+  }
+  .admin_content {
+    width: 95%;
+    font-size: 0.8rem;
+  }
+  .admin_content .header-menu {
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+  .admin_content .header-menu div {
+    width: 100%;
+  }
+  .admin_content .settings-container .pricing-container .pricing-wrapper {
+    padding: 10px;
+  }
+  .admin_content .settings-container .pricing-container .pricing-wrapper div {
+    flex-direction: column;
+  }
+  .admin_content .settings-container .pricing-container .pricing-wrapper div input {
+    width: 95%;
+  }
+  .admin_content .loginSettings-container .loginSettings-wrapper {
+    padding: 10px;
+  }
+  .admin_content .loginSettings-container .loginSettings-wrapper div {
+    flex-direction: column;
+  }
+  .admin_content .loginSettings-container .loginSettings-wrapper div input {
+    width: 95%;
+  }
+}
+.noborderbottom {
+  border-bottom: none !important;
+}
+
+.permos {
+  font-size: 0.7rem;
+}/*# sourceMappingURL=style.css.map */

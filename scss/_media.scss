@@ -1,0 +1,44 @@
+
+@media (max-width:550px){
+    .content-wrapper{
+        width: 95%;
+    }
+
+    .admin_content{
+        width: 95%;
+        font-size: 0.8rem;
+
+        .header-menu{
+            width: 100%;
+            flex-direction: column-reverse;
+
+            div{
+                width: 100%;
+            }
+        }
+        .settings-container .pricing-container .pricing-wrapper {   
+            padding: 10px;        
+
+            div{
+                flex-direction: column;
+
+                input{
+                    width: 95%;
+                }
+            }
+        }
+        .loginSettings-container .loginSettings-wrapper{
+            padding: 10px;   
+
+            div{
+                flex-direction: column;
+
+                input{
+                    width: 95%;
+                }
+            }
+        }
+    }
+
+}
+
