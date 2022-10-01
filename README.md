@@ -6,20 +6,20 @@ website: http://flg.rf.gd
 to play around..
 
 codes: <br/>
-HIWAYSTORE -> these set of characters has a number value
+BLACKHORSE -> these set of characters has a number value
 <br/>
-H -> 1 <br/>
-I -> 2 <br/>
-W -> 3 <br/>
-A -> 4 <br/>
-Y -> 5 <br/>
-S -> 6 <br/>
-T -> 7 <br/>
-O -> 8 <br/>
-R -> 9 <br/>
+B -> 1 <br/>
+L -> 2 <br/>
+A -> 3 <br/>
+C -> 4 <br/>
+K -> 5 <br/>
+H -> 6 <br/>
+O -> 7 <br/>
+R -> 8 <br/>
+S -> 9 <br/>
 E -> 0 <br/>
 <br/>
-Example input: enter code HEEEE, this has a equivalent number value of 10000
+Example input: enter code BEEEE, this has a equivalent number value of 10000
 
 
 
