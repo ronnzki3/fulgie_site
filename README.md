@@ -19,7 +19,7 @@ R -> 8 <br/>
 S -> 9 <br/>
 E -> 0 <br/>
 <br/>
-Example input: enter code BEEEE, this has a equivalent number value of 10000
+Example input: enter code BEEEE, this has a equivalent number value of 10000, then the system will compute the srp, suggested dp and suggested monthly installment dues based on the admin settings.
 
 
 
